@@ -14,7 +14,7 @@
 			var date = new Date();
 			
 			var testing = document.createElement('p');
-			testing.innerText = urlParams;
+			testing.innerText = urlParams.get('lang');
 			document.body.appendChild(testing);
 
 			var pre = document.createElement('pre');
