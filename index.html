@@ -15,7 +15,7 @@
 			
 			var testing = document.createElement('p');
 			testing.innerText = urlParams;
-			document.body.append(testing);
+			document.body.appendChild(testing);
 
 			var pre = document.createElement('pre');
 			pre.setAttribute('data-src', url + '?date=' + date.getTime());
