@@ -12,6 +12,10 @@
 			var url = decodeURI(urlParams.get('url'));
 			var lang = urlParams.get('lang');
 			var date = new Date();
+			
+			var testing = document.createElement('p');
+			testing.innerText = urlParams;
+			document.body.append(testing);
 
 			var pre = document.createElement('pre');
 			pre.setAttribute('data-src', url + '?date=' + date.getTime());
